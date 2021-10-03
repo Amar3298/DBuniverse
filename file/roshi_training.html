@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>Master Roshi Training</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../file/index.html">Dragon Ball</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../file/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../file/about.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Seasons
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../file/db.html">Dragon Ball</a></li>
+              <li><a class="dropdown-item" href="../file/dbz.html">Dragon Ball Z</a></li>
+              <li><a class="dropdown-item" href="../file/dbs.html">Dragon Ball Super</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="../file/bio.html">About Cretater</a></li>
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="../file/contact.html">Contact us</a>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn  btn-danger " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn  btn-danger" data-bs-toggle="modal" data-bs-target="#sigupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- login form/ model  -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--sigup form/ model  -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="sigupModal" tabindex="-1" aria-labelledby="sigupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sigupModalLabel">Cretae a Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <!-- <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div> -->
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/roshi/m (1).jpg" class=" img-fluid d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Master Roshi Training</h5>
+          <p>This were the start training and become who they are now well known for turtle hermit school </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- here we have added photo and text either left or right -->
+
+  <div class="container">
+
+    <div class="row featurette my-4">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Turtel Hermit school </h2>
+        <p class="lead">My favorite martial arts cartoon is the Dragonball series. The first series is called just
+          Dragonball and in the series, two young kids train under the greatest martial arts master, the turtle hermit
+          Master Roshi. Master Roshi agrees to take on these two students after many years of not training students and
+          gets them ready for a world tournament.
+
+          The two young boys go through the turtle hermit's way of training. And they do the same thing for 8 months
+          before their tournament. They do early morning training by getting up very early to deliver milk to the entire
+          island by running through trees and over waterfalls, then they do mid morning training by digging for an
+          agricultural ground with their bare hands, then breakfast, then they exercise their mind, then lunch, then
+          early afternoon training is using heavy tools at a construction site, then they must swim across a large lake
+          of sharks several times, and then dodge bees from a tree to work their dodging skills.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../img/roshi/training.jpg" class="img-fluid" alt="" height="500" width="400">
+
+      </div>
+    </div>
+
+
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Goku and Krillen Having regres Training </h2>
+        <p class="lead">The two young boys go through the turtle hermit's way of training. And they do the same thing
+          for 8 months before their tournament. They do early morning training by getting up very early to deliver milk
+          to the entire island by running through trees and over waterfalls, then they do mid morning training by
+          digging for an agricultural ground with their bare hands, then breakfast, then they exercise their mind, then
+          lunch, then early afternoon training is using heavy tools at a construction site, then they must swim across a
+          large lake of sharks several times, and then dodge bees from a tree to work their dodging skills.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../img/roshi/t_1.png" alt="" class="img-fluid">
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- here we have added photos using like templates -->
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/roshi/t_1.png" alt="" class=" img-fluid bd-placeholder-img card-img-top" width="100%"
+            height="225">
+
+          <div class="card-body">
+            <p class="card-text">I cannot stop talking how wonder full that time was the train like nothing but It is
+              said childhood is different they started from zero the truly deserve it</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/roshi/t_2.jpg" alt="" class=" img-fluid bd-placeholder-img card-img-top" width="100%"
+            height="225">
+
+          <div class="card-body">
+            <p class="card-text">They actualy started as strangers and become best frined that's so Awesome</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/roshi/t_3.png" alt="" class=" img-fluid bd-placeholder-img card-img-top" width="100%"
+            height="225">
+
+          <div class="card-body">
+            <p class="card-text">During the milk delivery, the apprentices face strong watercourses, long races, zigzags
+              between trees, and an interminable ascent in a staircase. </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/roshi/t_4.jpg" alt="" class=" img-fluid bd-placeholder-img card-img-top" width="100%"
+            height="225">
+
+          <div class="card-body">
+            <p class="card-text">Roshi says that a strong body is useless unless it has a head to use it and that uses
+              the power of the mind.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/roshi/ab.jpeg" alt="" class="bd-placeholder-img card-img-top img-fluid" width="100%"
+            height="225">
+
+          <div class="card-body">
+            <p class="card-text">After finishing all there daily chores </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/roshi/ab1.jpeg" alt="" class="bd-placeholder-img card-img-top img-fluid" width="100%"
+            height="225">
+
+          <div class="card-body">
+            <p class="card-text"> Roshi style training, to exercise well, to study well and to sleep well.</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- video adding  -->
+  <!-- this is a way how we add video with muted 
+    <video class="video-512 img-fluid mx-auto" autoplay="" loop="" muted="">
+        <source src="/img/roshi/video/First_kame_hame.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> -->
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-12 col-md-4">
+
+        <!-- Card -->
+        <div class="card mb-7">
+
+          <!-- Image -->
+          <video class="video-512 img-fluid mx-auto" controls loop="">
+            <source src="../img/roshi/video/First_kame_hame.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-4">
+
+        <!-- Card -->
+        <div class="card mb-7">
+
+          <!-- Image -->
+          <video class="video-512 img-fluid mx-auto" controls loop="">
+            <source src="../img/roshi/video/tutle_hurmate.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-4">
+
+        <!-- Card -->
+        <div class="card mb-7">
+
+          <!-- Image -->
+          <video class="video-512 img-fluid mx-auto" controls loop="">
+            <source src="../img/roshi/video/goku_meets_krillen.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <!-- footer  -->
+  <div class="bg-black fot">
+    <p>Copyright © 2021 Amar Raut rautamar.com | All Rights Reserved</p>
+  </div>
+
+
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

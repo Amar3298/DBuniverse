@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>Dragon Ball</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../file/index.html">Dragon Ball</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../file/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../file/about.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Seasons
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item active" href="../file/db.html">Dragon Ball</a></li>
+              <li><a class="dropdown-item" href="../file/dbz.html">Dragon Ball Z</a></li>
+              <li><a class="dropdown-item" href="../file/dbs.html">Dragon Ball Super</a></li>
+              <!-- <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/file/bio.html">About Cretater</a></li> -->
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="../file/contact.html">Contact us</a>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn  btn-danger " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn  btn-danger" data-bs-toggle="modal" data-bs-target="#sigupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- login form/ model  -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--sigup form/ model  -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="sigupModal" tabindex="-1" aria-labelledby="sigupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sigupModalLabel">Cretae a Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <!-- <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div> -->
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- first photos enrty photos -->
+
+  <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="../img/DB/db_s1_4.jpg" height="500" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/Wallpaperkiss_1811629.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_3.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_1.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_5.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_6.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_active.jpg" height="700" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/goku_bulma.jpg" height="700" class="d-block w-100" alt="...">
+      </div>
+      <!-- <div class="carousel-item" data-bs-interval="3000">
+            <img src="/img/DB/db_s1_7.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+          </div> -->
+      <!-- <div class="carousel-item" data-bs-interval="3000">
+            <img src="/img/DB/db_s1_8.png" height="500" class="d-block w-100 img-fluid" alt="...">
+          </div> -->
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_9.png" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_10.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <!-- <div class="carousel-item" data-bs-interval="3000">
+            <img src="/img/DB/db_s1_11.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+          </div> -->
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_12.png" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_13.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_14.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_15.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_16.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DB/db_s1_17.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <!-- some info about dragon ball z-->
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Dragon Ball</h1>
+      <p class="lead my-3">This is one of my favorite here he started training during his journy he made friend that are
+        with him during up's and down's not he only become stronger but he also pushed his friends he have a unique way
+        of fighting some of his friend started as fow but eventualy he eared respect that's what unique about him. </p>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- now summery about the Seasons -->
+
+  <div class="container my-5">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Hunt for the Dragon Balls Saga </h2>
+        <p class="lead">The series begins with a young monkey-tailed boy named Goku befriending a teenage girl named
+          Bulma. Together, they go on an adventure to find the seven mystical Dragon Balls , which have the ability to
+          summon the powerful dragon Shenron, who can grant whoever summoned him their greatest desire. The journey
+          leads to a confrontation with the shape-shifting pig Oolong, as well as a desert bandit named Yamcha and his
+          companion Pu'ar, who all later become allies; Chi-Chi, whom Goku unknowingly agrees to marry; and Emperor
+          Pilaf, a blue imp who seeks the Dragon Balls to fulfill his desire of becoming ruler of the world. Oolong
+          stops Pilaf from using the Dragon Balls by wishing for a pair of panties.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../img/DB/bulma_goku_a.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row featurette  my-4">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Tenkaichi Budokai Saga </h2>
+        <p class="lead">Goku undergoes rigorous training regimes under the martial artist Master Roshi in order to fight
+          in the World Martial Arts Tournament ( "Tenkaichi Budōkai") that attracts the most powerful fighters in the
+          world. A monk named Krillin becomes his training partner and rival, but they soon become best friends.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../img/DB/training.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container my-5">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Red Ribbon Army Saga </h2>
+        <p class="lead">After the tournament, Goku sets out on his own to recover the Dragon Ball his deceased
+          grandfather left him and encounters a terrorist organization known as the Red Ribbon Army, whose diminutive
+          leader, Commander Red, wants to collect the Dragon Balls so that he can use them to become taller. He almost
+          single-handedly defeats the army, including their hired assassin Mercenary Tao, whom he originally loses to,
+          but after training under the hermit Korin, easily beats. Goku reunites with his friends to defeat
+          Fortuneteller Baba's fighters and have her locate the last Dragon Ball in order to revive a friend killed by
+          Tao.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../img/DB/red_ribben_army.png" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="row featurette container my-4">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">King Piccolo Saga</h2>
+      <p class="lead">They all reunite at the World Martial Arts Tournament three years later and meet Master Roshi's
+        rival and Tao's brother, Master Shen, and his students Tien Shinhan and Chiaotzu, who vow to exact revenge for
+        Tao's apparent death at the hands of Goku. Krillin is murdered after the tournament and Goku tracks down and is
+        defeated by his killer, Demon King Piccolo. The overweight samurai Yajirobe takes Goku to Korin, where he
+        receives healing and a power boost. Meanwhile, Piccolo kills both Master Roshi and Chiaotzu, and uses the Dragon
+        Balls to give himself eternal youth before destroying Shenron, which results in the Dragon Balls' destruction.
+        As King Piccolo prepares to destroy West City as a show of force, Tien Shinhan arrives to confront him, but is
+        defeated and nearly killed. Goku arrives in time to save Tien and then kills King Piccolo by blasting a hole
+        through his chest.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="../img/DB/goku_vs_king_p.jpg" alt=""
+        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+    </div>
+  </div>
+
+
+  <div class="container my-5">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Hunt for the Dragon Balls Saga </h2>
+        <p class="lead">However, just before he dies, Piccolo spawns his final son, Piccolo Junior. Korin informs Goku
+          that Kami, the original creator of the Dragon Balls, might be able to restore Shenron so that Goku can wish
+          his fallen friends back to life, which he does. He also stays and trains under Kami for the next three years,
+          once again reuniting with his friends at the Martial Arts Tournament, as well as a now-teenaged Chi-Chi and
+          the revived Mercenary Tao. Piccolo Junior also enters the tournament to avenge his father's death, leading to
+          the final battle between him and Goku. After Goku narrowly wins and defeats Piccolo Junior, he leaves with
+          Chi-Chi and they get married, leading to the events of Dragon Ball Z.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../img/DB/goku_vs_junio_picholo.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <h1>Favorite movements</h1>
+
+
+    <div class="row featurette  my-4">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">KRILLIN: Brotherly Bonds</h2>
+        <p class="lead">Goku and Krillin started out as rivals at the beginning of Dragon Ball with both vying to be
+          Master Roshi’s pupil. In those days, Krillin wasn’t as trustworthy or forthright as he later became famous
+          for. He bribed the lecherous Roshi with adult magazines and even talked a beautiful woman named Launch into
+          living with them to keep Master Roshi company.
+
+          Initially, Krillin disliked Goku immensely because of Goku's apparent naivety and mutual student rivalry, but
+          mostly because Goku was so good-natured and a great natural fighter. During their first year of training under
+          Master Roshi, Goku’s demeanor won over Krillin and the shiny-headed monk built a bond with Goku that couldn’t
+          be matched</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../img/DB/Goku_krillen1.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- video added  -->
+  <div class="container my-5">
+
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <!-- Card -->
+        <div class="card mb-7">
+          <!-- Video -->
+          <video class="video-512 img-fluid mx-auto" controls loop="">
+            <source src="../img/DB/video/Goku_krillen_avm.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <!-- Card -->
+        <div class="card mb-7">
+          <!-- Video -->
+          <video class="video-512 img-fluid mx-auto" controls loop="">
+            <source src="../img/DB/video/goku_fr.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <!-- Card -->
+        <div class="card mb-7">
+          <!-- Video -->
+          <video class="video-512 img-fluid mx-auto" controls loop="">
+            <source src="../img/DB/video/Goku_fr1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- master roshi video -->
+
+  <div class="container">
+    <div class="row featurette  my-4">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Master Roshi </h2>
+        <p class="lead">Master Roshi's first Kamehameha is the moment Akira Toriyama makes clear that there's more to
+          Dragon Ball than meets the eye. The story had its charm up to this point, but it had yet to give one singular
+          moment such a level of respect. The build up to Roshi's Kamehameha is palpable, and every panel lends to the
+          tension in the air.
+
+          Roshi's frail body spawns the beefiest muscles seen in early Dragon Ball and Roshi unleashes a truly epic
+          Kamehameha. It's a stunning moment that utterly obliterates Gyumao's Palace while setting an important
+          precedent for Ki that Dragon Ball would hold onto and never let go of.</p>
+        <p>The Kamehameha is as synonymous with Dragon Ball as Son Goku himself. The series’ signature technique was the
+          first Ki attack introduced in the story proper, and has remained a mainstay as Dragon Ball has extended into
+          multiple spin-offs and sequels. From the moment Master Roshi uses the Kamehameha for the first time, it was
+          clear we were witnessing something legendary.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <video src="../img/DB/video/Master_roshi.mp4"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+          controls></video>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="iframe-container  my-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MBFQp8zO9h4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div> -->
+
+  </div>
+  <!-- footer  -->
+  <div class="bg-black fot">
+    <p>Copyright © 2021 Amar Raut rautamar.com | All Rights Reserved</p>
+  </div>
+
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

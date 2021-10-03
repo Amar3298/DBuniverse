@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>Dragon Ball Z</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../file/index.html">Dragon Ball</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../file/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../file/about.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Seasons
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../file/db.html">Dragon Ball</a></li>
+              <li><a class="dropdown-item active" href="../file/dbz.html">Dragon Ball Z</a></li>
+              <li><a class="dropdown-item" href="../file/dbs.html">Dragon Ball Super</a></li>
+              <li>
+                <!-- <hr class="dropdown-divider"> -->
+              <!-- </li>
+              <li><a class="dropdown-item" href="/file/bio.html">About Cretater</a></li> -->
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="../file/contact.html">Contact us</a>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn  btn-danger " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn  btn-danger" data-bs-toggle="modal" data-bs-target="#sigupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- login form/ model  -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--sigup form/ model  -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="sigupModal" tabindex="-1" aria-labelledby="sigupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sigupModalLabel">Cretae a Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <!-- <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div> -->
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- first photos enrty photos -->
+
+  <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="../img/DBZ/dbz_1.jpg" height="500" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DBZ/dbz_2.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DBZ/dbz_3.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DBZ/dbz_4.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DBZ/dbz_5.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DBZ/dbz_6.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DBZ/dbz_7.jpg" height="700" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DBZ/dbz_8.jpg" height="700" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DBZ/dbz_9.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="../img/DBZ/dbz_10.jpg" height="700" class="d-block w-100 img-fluid" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+  <!-- Saiyan saga -->
+  <!-- right photo -->
+  <div class="container">
+    <div class="row featurette my-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Saiyan Saga</h2>
+        <p class="lead">Dragon Ball Z picks up five years after the end of the Dragon Ball anime, with Goku now a young
+          adult and father to his son, Gohan.
+
+          A humanoid alien named Raditz arrives on Earth in a spacecraft and tracks down Goku, revealing to him that he
+          is his long-lost older brother and that they are members of a near-extinct alien warrior race called the
+          Saiyans (Saiya-jin). The Saiyans had sent Goku (originally named "Kakarot") to Earth as an infant to conquer
+          the planet for them, but he suffered a severe blow to the head shortly after his arrival and lost all memory
+          of his mission, as well as his bloodthirsty Saiyan nature.
+
+          Raditz along with two elites, Vegeta and Nappa are the only remaining Saiyan warriors, so Raditz comes to
+          enlist Goku's help in conquering frontier worlds. When Goku refuses to join them, Raditz takes Goku and
+          Krillin down with one strike, kidnaps Gohan and threatens to murder him if Goku doesn't kill 100 humans within
+          the next 24 hours. Goku decides to team up with his arch-enemy Piccolo, who was also defeated by Raditz in an
+          earlier encounter, in order to defeat him and save his son. During the battle, Gohan's rage momentarily makes
+          him stronger than Piccolo and Goku as he attacks Raditz to protect his father. The battle ends with Goku
+          restraining Raditz so that Piccolo can hit them with a deadly move called Special Beam Cannon, mortally
+          wounding them both. Before Raditz succumbs to his injuries, he reveals to Piccolo that the other two Saiyans
+          are much stronger than him and will come for the Dragon Balls in one year's time.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../img/DBZ/sayian_saga/saiyan_saga.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- left side image photo -->
+  <!-- picholo training gohan -->
+  <div class="container ">
+    <div class="row featurette my-5">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Piccolo training little gohan</h2>
+        <p class="lead">Having witnessed Gohan's latent potential, Piccolo takes him into the wilderness to train for
+          the upcoming battle against the Saiyan Elites. In the afterlife, Goku travels the million-kilometer Snake Way
+          so that he can train under the ruler of the North Galaxy, King Kai. King Kai teaches him the Kaio-ken (界王拳)
+          and Spirit Bomb (Genki Dama) techniques. In spite of his gruff nature, Piccolo grows fond of Gohan while he
+          oversees him learning to fend for himself. This forges an unlikely emotional bond between the two.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../img/DBZ/sayian_saga/picholo_gohan_trainig.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- right photo -->
+  <!-- goku vs vegeta for the first time -->
+  <div class="container">
+    <div class="row featurette my-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Vegeta Saga</h2>
+        <p class="lead">After a year, Goku is revived with the Dragon Balls, but King Kai panics as he realizes that
+          Goku will have to take Snake Way again to get back and won't make it until hours after the Saiyans arrive.
+          Goku's allies group up to fight until Goku gets back, but prove to be no match for Nappa and the "Prince of
+          All Saiyans", Vegeta. Yamcha, Tien Shinhan, Chiaotzu and Piccolo all perish in the battle, with Piccolo's
+          death causing both Kami and the Dragon Balls to fade from existence. When Goku finally arrives at the
+          battlefield, he avenges his fallen friends by easily defeating Nappa before crippling him by breaking his
+          spine in half. A furious Vegeta then executes Nappa for his failure to kill Goku.
+
+          Goku uses several grades of the Kaio-ken to win the first clash with Vegeta, which concludes with a climactic
+          ki beam struggle, but it comes at a great cost to his body. Vegeta comes back and creates an artificial moon
+          to transform into a Great Ape, which he uses to torture Goku. Krillin and Gohan sense that Goku is in trouble,
+          and they return for a group fight with the now-seemingly unstoppable Vegeta. They are aided at key moments by
+          Yajirobe, who cuts Vegeta's tail to revert him into his normal state. Goku gives Krillin a Spirit Bomb that he
+          made, and Krillin uses it to severely damage Vegeta. Vegeta is ultimately defeated when he is crushed by
+          Gohan's Great Ape form, and he retreats to his spaceship as Krillin approaches to finish him off. Goku
+          convinces Krillin to spare Vegeta's life and allow him to escape Earth, with Vegeta vowing to return and
+          destroy the planet in revenge for his humiliation at Goku's hands.
+
+          During the battle, Krillin overhears Vegeta mentioning the original set of Dragon Balls from Piccolo's home
+          world, Namek (Namekku-sei). While Goku recovers from his injuries, Gohan, Krillin and Goku's oldest friend
+          Bulma depart for Namek in order to use these Dragon Balls to revive their fallen friends.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../img/DBZ/sayian_saga/saiyan_saga_a.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- left side image photo -->
+  <!-- Frieza rampage -->
+  <div class="container ">
+    <div class="row featurette my-5">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Frieza Saga</h2>
+        <p class="lead">Upon their arrival on Namek, Krillin, Gohan, and Bulma discover that Vegeta and his superior,
+          the galactic tyrant Frieza, are already there, each looking to use the Dragon Balls to obtain immortality.
+          Vegeta is stronger than before, as Saiyans become stronger when they recover from the brink of death, so he
+          seizes the opportunity to rebel against Frieza. A triangular game of cat-and-mouse ensues, with Frieza, Vegeta
+          and Gohan/Krillin alternately possessing one or more of the Dragon Balls, with no one managing to possess all
+          seven at any given time.
+
+          Vegeta manages to isolate Frieza's lieutenants one-by-one and kill them. When Frieza sees that Vegeta is
+          posing too big of a problem, he summons the Ginyu Force, a team of elite mercenaries led by Captain Ginyu, who
+          has the ability to switch bodies with his opponents. Vegeta reluctantly teams up with Gohan and Krillin to
+          fight them, knowing that they are too much for him to handle alone. The Ginyu Force proves too powerful, but
+          Goku finally arrives and defeats them single-handedly, saving Vegeta, Gohan, and Krillin. Vegeta believes Goku
+          may have become the legendary warrior of the Saiyans, the Super Saiyan (Sūpā Saiya-jin). As Goku heals from a
+          brutal fight with Captain Ginyu, Krillin, Dende and Gohan secretly use the Dragon Balls behind Vegeta's back
+          to wish for Piccolo's resurrection and teleport him to Namek. Vegeta finds them using the Dragon Balls without
+          him, but the Grand Elder dies and renders the Dragon Balls inert before he can wish for immortality. Just as
+          this happens, Frieza arrives and decides to kill the four of them for denying him his wish for immortality.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../img/DBZ/Friza saga/frieza_saga_2.jpeg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- right photo -->
+  <!-- goku transform in Super sayian -->
+  <div class="container">
+    <div class="row featurette my-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Goku vs Frieza</h2>
+        <p class="lead">Piccolo arrives on Namek, but is accidentally separated from the others due to a badly-worded
+          wish. He finds the strongest Namekian warrior, Nail, who was defeated by Frieza, and fuses with him to greatly
+          increase his power.
+
+          Despite both Piccolo and Vegeta's advances in power, they are greatly outclassed by Frieza, who goes through
+          several transformations before reaching his final form, which he then uses to kill Dende.
+
+          Goku arrives after healing from his injuries, and Vegeta tells him that Frieza was the one who destroyed the
+          Saiyan homeworld and massacred the Saiyan race, as he feared that he would one day be overthrown by a Super
+          Saiyan. Frieza then kills Vegeta in front of Goku.
+
+          Though Goku's power exceeds Vegeta's, he is still no match for Frieza. Goku uses his last resort, a massive
+          Spirit Bomb with the energy of Namek and the surrounding worlds, and it seemingly defeats the tyrant. However,
+          Frieza manages to survive, and he unleashes his wrath upon the group by gravely wounding Piccolo and murdering
+          Krillin. Goku's rage finally erupts, and he undergoes a strange transformation that turns his hair blond, his
+          eyes blue and causes a golden aura to radiate from his body. Goku has finally become a Super Saiyan.
+
+          Meanwhile, the revived Kami uses Earth's Dragon Balls to resurrect everyone on Namek that was killed by Frieza
+          and his henchmen, which also allows the Grand Elder to be resurrected for a short time, and the Namekian
+          Dragon to return. Dende uses the final wish to teleport everyone on Namek to Earth except for Goku and Frieza.
+
+          Even at 100% power, Frieza proves to be no match for the Super Saiyan transformation, and Goku defeats the
+          evil tyrant before escaping Namek as the planet is destroyed in a massive explosion.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../img/DBZ/Friza saga/frieza_saga_3.jpeg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- left side image photo -->
+  <!-- android saga -->
+  <div class="container ">
+    <div class="row featurette my-5">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Androids Saga</h2>
+        <p class="lead">One year later, Frieza is revealed to have survived and arrives on Earth with his father, King
+          Cold, seeking revenge. However, a mysterious young man named Trunks appears, transforms into a Super Saiyan
+          and kills them both. Goku returns a few hours later, having spent the past year on the alien planet Yardrat
+          learning a new technique: Instant Transmission, which allows him to teleport to any location he desires.
+          Trunks reveals privately to Goku that he is the son of Vegeta and Bulma, and has traveled from 17 years in the
+          future to warn Goku that two Androids (人造人間, Jinzōningen, lit. "Artificial Humans") created by Dr. Gero will
+          appear in three years to seek revenge against Goku for destroying the Red Ribbon Army when he was a child.
+          Trunks says all of Goku's friends will fall to them - while Goku himself will die from a heart virus six
+          months prior to their arrival.
+
+          Trunks gives Goku medicine from the future that will save him from the heart virus and departs back to his own
+          time. When the androids arrive, Goku falls ill during his fight with Android 19, but is saved by Vegeta, who
+          reveals that he has also achieved the Super Saiyan transformation. Vegeta and Piccolo easily defeat Android 19
+          and Dr. Gero (who turned himself into "Android 20"), but Trunks returns from the future to check on their
+          progress and reveals that the androids they defeated are not the ones that killed all of them in the future.
+
+          Goku is out of commission and his allies are overwhelmed by the arrival of Androids 17 and 18, and an even
+          stronger bio-Android called Cell emerges from a different timeline and embarks on a quest to find and absorb
+          Androids 17 and 18 which will allow him to attain his "perfect form"</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../img/DBZ/Android_saga/Andriod_saga_1.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- right photo -->
+  <!-- goku transform in Super sayian -->
+  <div class="container">
+    <div class="row featurette my-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Gohan vs Cell</h2>
+        <p class="lead">Cell successfully absorbs Android 17, becoming considerably more powerful, but Vegeta returns to
+          the battle, having greatly elevated his own power, and easily overpowers him. However, Vegeta allows Cell to
+          absorb Android 18, believing that his "perfect form" will be no match for his Super Saiyan power. Vegeta is
+          subsequently defeated, with Cell sarcastically thanking him for helping him achieve perfection.
+
+          Cell allows everyone to live for the time being and announces his own fighting tournament to decide the fate
+          of the Earth, known as the "Cell Games". Goku, recovered from the heart virus and having reached the zenith of
+          the Super Saiyan form, takes on Cell at the tournament. Goku eventually realizes that Cell is far too powerful
+          for him to handle, and forfeits the fight to the astonishment of everyone else. Goku proclaims that Gohan will
+          be able to defeat Cell. Though initially outclassed, Gohan is eventually able to tap into his latent power and
+          achieves the Super Saiyan 2 transformation. Refusing to accept defeat, Cell prepares to self-destruct and
+          destroy the Earth.
+
+          Goku uses his Instant Transmission ability to teleport himself and Cell to King Kai's planet, where Cell
+          explodes and kills everyone there. However, Cell survives the blast and returns to Earth more powerful than
+          ever, where he promptly murders Trunks, but Gohan unleashes the totality of his power in a massive Kamehameha
+          wave and obliterates Cell for good.
+
+          The Dragon Balls are then used to revive everyone that was killed by Cell, while Goku chooses to remain in the
+          afterlife, refusing an offer by his friends to use the Namekian Dragon Balls to bring him back. Trunks returns
+          to his own timeline and uses his bolstered power to finally slay the Future Androids and Cell.
+
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="../img/DBZ/Android_saga/Andriod_saga_3.png" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+        <hr>
+        <img src="../img/DBZ/Android_saga/Andriod_saga_5.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- left side image photo -->
+  <!-- android saga -->
+  <div class="container ">
+    <div class="row featurette my-5">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Androids Saga</h2>
+        <p class="lead">One year later, Frieza is revealed to have survived and arrives on Earth with his father, King
+          Cold, seeking revenge. However, a mysterious young man named Trunks appears, transforms into a Super Saiyan
+          and kills them both. Goku returns a few hours later, having spent the past year on the alien planet Yardrat
+          learning a new technique: Instant Transmission, which allows him to teleport to any location he desires.
+          Trunks reveals privately to Goku that he is the son of Vegeta and Bulma, and has traveled from 17 years in the
+          future to warn Goku that two Androids (人造人間, Jinzōningen, lit. "Artificial Humans") created by Dr. Gero will
+          appear in three years to seek revenge against Goku for destroying the Red Ribbon Army when he was a child.
+          Trunks says all of Goku's friends will fall to them - while Goku himself will die from a heart virus six
+          months prior to their arrival.
+
+          Trunks gives Goku medicine from the future that will save him from the heart virus and departs back to his own
+          time. When the androids arrive, Goku falls ill during his fight with Android 19, but is saved by Vegeta, who
+          reveals that he has also achieved the Super Saiyan transformation. Vegeta and Piccolo easily defeat Android 19
+          and Dr. Gero (who turned himself into "Android 20"), but Trunks returns from the future to check on their
+          progress and reveals that the androids they defeated are not the ones that killed all of them in the future.
+
+          Goku is out of commission and his allies are overwhelmed by the arrival of Androids 17 and 18, and an even
+          stronger bio-Android called Cell emerges from a different timeline and embarks on a quest to find and absorb
+          Androids 17 and 18 which will allow him to attain his "perfect form"</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../img/DBZ/Android_saga/Andriod_saga_1.jpg" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- right photo -->
+  <!-- goku transform in Super sayian -->
+  <div class="container">
+    <div class="row featurette my-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Majin Buu Saga</h2>
+        <p class="lead">Seven years later, Goku is allowed to go back to Earth for one day to reunite with his loved
+          ones and meet his youngest son, Goten, at the Tenkaichi Budōkai ("Strongest Under the Heavens Martial Arts
+          Tournament"). Soon after, Goku and his allies are drawn into a fight by the Supreme Kai against a magical
+          being named Majin Buu (”Demon Person Buu”) summoned by the evil wizard Babidi. All efforts of preventing the
+          resurrection prove to be futile as Buu is successfully revived, resulting in Vegeta, who had willingly joined
+          forces with Babidi so he could surpass Goku, committing suicide in a failed attempt to kill Buu. Goten and
+          Trunks are taught the fusion technique by Goku, while Gohan is trained by the Supreme Kai to unlock his latent
+          potential. Meanwhile, Buu befriends Mr. Satan and vows to never kill anyone ever again, but is interrupted
+          when a deranged gunman shoots and nearly kills Mr. Satan. As a result, Majin Buu becomes so angry that he
+          expels the evil within himself, creating an evil Buu that proceeds to absorb the good Buu. The result is Super
+          Buu, a psychopathic monster who wants nothing more than the total destruction of the universe. After numerous
+          battles that result in the deaths of many of Goku's allies as well as the destruction of Earth, Goku (whose
+          life is fully restored by the Elder Supreme Kai) defeats Kid Buu (the original and most dangerous form of
+          Majin Buu) with a Spirit Bomb attack containing the energy of all the inhabitants of Earth, who were
+          resurrected along with the planet by the Namekian Dragon Balls. Goku makes a wish for Kid Buu to be
+          reincarnated as a good person and, ten years later at another Tenkaichi Budōkai, he meets Kid Buu's human
+          reincarnation, Uub. Leaving the match between them unfinished, Goku departs with Uub so he can train him to
+          become Earth's new defender.
+
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="../img/DBZ/buu saga/magin_buu_1.png" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+        <hr class="featurette-divider">
+        <img src="../img/DBZ/buu saga/magin_buu_2.png" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- video added  -->
+  <div class="container my-5">
+
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <!-- Card -->
+        <div class="card mb-7">
+          <!-- Video -->
+          <video class="video-512 img-fluid mx-auto" controls loop="">
+            <source src="../img/DBZ/video/Goku_vs_buu.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <!-- Card -->
+        <div class="card mb-7">
+          <!-- Video -->
+          <video class="video-512 img-fluid mx-auto" controls loop="">
+            <source src="../img/DBZ/video/Goku_vs_suprem_kai.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <!-- Card -->
+        <div class="card mb-7">
+          <!-- Video -->
+          <video class="video-512 img-fluid mx-auto" controls loop="">
+            <source src="../img/DBZ/video/Goku_ss3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- photos of DBZ -->
+
+  <div class="container">
+    <section class="py-12 my-4">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-4">
+            <!-- Card -->
+            <div class="card mb-7">
+              <!-- Image -->
+              <img src="../img/DBZ/gallary/2.jpg" alt="..." class="img-fluid card-img">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <!-- Card -->
+            <div class="card mb-7">
+              <!-- Image -->
+              <img src="../img/DBZ/gallary/1.png" alt="..." class="img-fluid card-img">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <!-- Card -->
+            <div class="card mb-7">
+              <!-- Image. -->
+              <img src="../img/DBZ/gallary/3.jpg" alt="..." class=" img-fluid card-img">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <!-- Card -->
+            <div class="card mb-7">
+              <!-- Image -->
+              <img src="../img/DBZ/gallary/4.jpg" alt="..." class=" img-fluid card-img">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <!-- Card -->
+            <div class="card mb-7">
+              <!-- Image -->
+              <img src="../img/DBZ/gallary/5.jpg" alt="..." class=" img-fluid card-img">
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <!-- Card -->
+            <div class="card mb-7">
+              <!-- Image -->
+              <img src="../img/DBZ/gallary/6.jpg" alt="..." class=" img-fluid card-img">
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <hr class="featurette-divider">
+
+
+
+  <!-- youtube video -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="iframe-container  my-5">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QbTZ5wFZ6ZE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+
+
+      <!-- footer  -->
+      <div class="bg-black fot">
+        <p>Copyright © 2021 Amar Raut rautamar.com | All Rights Reserved</p>
+      </div>
+
+      <script src="../js/jquery-3.6.0.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

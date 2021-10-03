@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>About</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../file/index.html">Dragon Ball</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../file/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../file/about.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Seasons
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../file/db.html">Dragon Ball</a></li>
+              <li><a class="dropdown-item" href="../file/dbz.html">Dragon Ball Z</a></li>
+              <li><a class="dropdown-item" href="../file/dbs.html">Dragon Ball Super</a></li>
+              <!-- <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/file/bio.html">About Cretater</a></li> -->
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="../file/contact.html">Contact us</a>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn  btn-danger " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn  btn-danger" data-bs-toggle="modal" data-bs-target="#sigupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- login form/ model  -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--sigup form/ model  -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="sigupModal" tabindex="-1" aria-labelledby="sigupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sigupModalLabel">Cretae a Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <!-- <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div> -->
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-5 fst-italic">Wellcome to Dragon Ball Universe</h1>
+      <p class="lead my-3">This is me Amar here this are some of my Favourite videos hope you will enjoy </p>
+      <p class="lead">To see particular video just click on photo below</p>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- here we start fav videos display -->
+
+  <div class="container my-3">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      <!-- goku ultra instint for the first time -->
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/gogeta_vs_goku_black_SS3.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/gogeta_big_bang.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Gogeta vs SS3 Goku black</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/2.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/gohan_kamehame.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Transition</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/3.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/vegeto_vs_zamasu.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Vegeto vs Zamasu</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/memories.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/memories.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Dragon ball memories</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/Goku_vs_jiren.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/goku-vs.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Goku vs Jiren</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/Sayian_angery.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/vegeta-rage.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Saiyan getting angry</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/trunks_anger.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/trunks_rage.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Trunks rage</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/frieza_goku.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/goku_frieza.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Goku and Frieza as a team</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/trunks_vs_goku.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/trunks_vs_goku.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Goku vs Trunks</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/goku_vs_kefla.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/goku_vs_Kefla.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Goku vs Kefla</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/goku_grandpa.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/Goku_as_grandfather.gif" alt="" class="bd-placeholder-img card-img-top"
+                width="100%" height="225">
+
+              <div class="card-body">
+                <p class="card-text">Goku as Grandfather</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+      <button class="my-2 bc">
+        <a href="../img/video/video/gohan_vs_goku.mp4" class="dec">
+          <div class="col my-2">
+            <div class="card shadow-sm">
+              <img src="../img/video/gif/goku_vs_gohan.gif" alt="" class="bd-placeholder-img card-img-top" width="100%"
+                height="225">
+
+              <div class="card-body">
+                <p class="card-text">Goku vs Gohan</p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </button>
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer  -->
+  <div class="bg-black fot">
+    <p>Copyright © 2021 Amar Raut rautamar.com | All Rights Reserved</p>
+  </div>
+
+
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
